@@ -1,15 +1,15 @@
-//Faça um programa em C++ para ler e armazenar em um vetor a temperatura
-//média de todos os dias do ano. Calcular e escrever:
+//FaÃ§a um programa em C++ para ler e armazenar em um vetor a temperatura
+//mÃ©dia de todos os dias do ano. Calcular e escrever:
 //a) Menor temperatura do ano
 //b) Maior temperatura do ano
-//c) Temperatura média anual
-//d) O número de dias no ano em que a temperatura foi inferior a média anual
+//c) Temperatura mÃ©dia anual
+//d) O nÃºmero de dias no ano em que a temperatura foi inferior a mÃ©dia anual
 
 #include <iostream>
 #include <locale>
 
 using namespace std;
-#define DIAS 5
+#define DIAS 365
 int main()
 {
     float temp[DIAS];
@@ -17,7 +17,7 @@ int main()
     float menor , maior, media;
     int abaixo = 0;
 
-    cout << "Digite a temperatura média de cada dia do ano:" << endl;
+    cout << "Digite a temperatura mÃ©dia de cada dia do ano:" << endl;
     for (int i = 0; i < DIAS; ++i) {
         cout << "Dia " << i + 1 << ": ";
         cin >> temp[i];
