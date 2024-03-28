@@ -23,7 +23,7 @@ int main()
         soma += *(ptr + i);
     }
 
-    double media = (soma) / TAM;
+    float media = (soma) / TAM;
 
     cout << "A media dos numeros e: \n" << media;
 
